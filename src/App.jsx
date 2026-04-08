@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./app.css";
+import "./App.css";
 import Sidebar from "./components/Sidebar.jsx";
 import Dashboard from "./modules/Dashboard.jsx";
 import Inventory from "./modules/Inventory.jsx";
