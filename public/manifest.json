@@ -1,0 +1,40 @@
+{
+  "short_name": "Gwalior ERP",
+  "name": "Gwalior Construction ERP",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "678x382",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Gwalior ERP Mobile View" 
+      
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1345x633",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Gwalior ERP Desktop View"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
