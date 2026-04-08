@@ -285,6 +285,21 @@ const LabourLog = ({
           );
         })}
       </div>
+
+         {labourList.length===0 && 
+        <div className="w-full flex justify-center items-center py-20 text-center italic text-slate-400 font-bold uppercase tracking-widest text-xs animate-pulse">
+          No workers added yet! Start by adding new labourers to the list.
+          </div>
+        }
+
+      {labourList.length > 0 && <div className="flex justify-center items-center">
+        <button
+        onClick={() => setLabourList([])}
+        className={`w-full sm:w-fit mx-4 px-6 py-3 bg-rose-600 hover:scale-105 transition-all duration-300 cursor-pointer text-white rounded-2xl font-bold uppercase text-[10px] tracking-widest shadow-lg`}
+      >
+        <span className="font-bold">Clear All</span>
+      </button>
+      </div>}
     </div>
   );
 };
