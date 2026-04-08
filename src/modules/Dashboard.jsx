@@ -10,6 +10,7 @@ const Dashboard = ({
   labourList,
   otherExpense,
   siteExpenses,
+  setActiveTab
 }) => {
   let totalWeight = materials.reduce(
     (total, item) => total + item.qty * item.unitWeight,
@@ -31,6 +32,8 @@ const Dashboard = ({
           color="bg-emerald-500"
           trend="On-Site"
           bar={labourLength}
+          setActiveTab={setActiveTab}
+          activeTab="labour"
         />
         <StatCard
           title="Total Inventory"
@@ -38,18 +41,24 @@ const Dashboard = ({
           icon={<MdOutlineInventory />}
           color="bg-indigo-600"
           trend={`${lowStockCount} stock ends`}
+          setActiveTab={setActiveTab}
+          activeTab="inventory"
         />
         <StatCard
           title="Site Expenses"
           value={`₹${siteExpenses}`}
           icon={<FaMoneyCheckDollar />}
           color="bg-amber-500"
+          setActiveTab={setActiveTab}
+          activeTab="inventory"
         />
         <StatCard
           title="Other Expenses"
           value={`₹${otherExpense}`}
           icon={<FaMoneyBillTransfer />}
           color="bg-rose-500"
+          setActiveTab={setActiveTab}
+          activeTab="expense"
         />
       </div>
 

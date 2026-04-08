@@ -63,7 +63,7 @@ function App() {
       <main className="flex-1 md:ml-56 p-5 md:p-12 transition-all duration-300 pt-20">
         {/* Dynamic Navigation Logic */}
         {activeTab === "dashboard" && (
-          <Dashboard materials={materials} activeWorkers={activeWorkers} labourList={labourList} otherExpense={otherExpense} siteExpenses={siteExpenses} />
+          <Dashboard setActiveTab={setActiveTab} materials={materials} activeWorkers={activeWorkers} labourList={labourList} otherExpense={otherExpense} siteExpenses={siteExpenses} />
         )}
         {activeTab === "inventory" && (
           <Inventory materials={materials} setMaterials={setMaterials} />

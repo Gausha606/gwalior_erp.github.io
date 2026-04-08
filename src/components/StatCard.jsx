@@ -1,8 +1,8 @@
 import React from "react";
 
-const StatCard = ({ title, value, icon, color, trend, bar }) => {
+const StatCard = ({ title, value, icon, color, trend, bar, setActiveTab,activeTab }) => {
   return (
-    <div className="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col justify-between h-64 group hover:-translate-y-1 transition-all duration-300">
+    <div onClick={()=>setActiveTab(activeTab)} className="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col justify-between h-64 group hover:-translate-y-1 transition-all duration-300 cursor-pointer">
       
       {/* Icon & Title Section */}
       <div className="flex justify-between items-start">
