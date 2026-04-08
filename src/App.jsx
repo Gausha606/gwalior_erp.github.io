@@ -37,7 +37,7 @@ function App() {
   },[materials])
 
   useEffect(()=>{
-    localStorage.setItem("Site_Labour",JSON.stringify(labourList));
+    localStorage.setItem("Site_Labours",JSON.stringify(labourList));
   },[labourList])
 
   useEffect(()=>{
